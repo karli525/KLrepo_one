@@ -1,0 +1,36 @@
+/*
+style.css - Assignment_3
+----------------------------------------------------------
+Purpose: Demonstrate External, Internal, and Inline CSS 
+Assignment: Assignment_3 (CSS Cascade & Inheritance)
+Course Reference: Chapter 5 (Colors, Fonts, Text Properties)
+*/
+
+/* Global body styles (Interitance Example) */
+body {
+    font-family: Helvetica, sans-serif; /* This is inherited by all text */
+    background-color: antiquewhite; /* matchting the HTML file */
+}
+
+/* External CSS for h1 (Overridden by in line CSS in index.html) */
+h1 {
+    color:palevioletred; /* Defult heading color */
+    text-align:center;
+    font-size: 33px;
+}
+
+/* Styling for paragraphs (Overridden by internal & inline CSS in index.html) */
+
+p {
+    font-size: 20px;
+    line-height:1.6;
+    color: pink; /* matches internal CSS in HTML */
+}
+
+/* Footer styles (Background color matches internal CSS in HTML) */
+footer {
+    background-color: rgb(202,151,202); /* Matches internal CSS */
+    padding: 10px;
+    text-align:center;
+    color: pink;
+}
