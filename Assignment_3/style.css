@@ -6,15 +6,15 @@ Assignment: Assignment_3 (CSS Cascade & Inheritance)
 Course Reference: Chapter 5 (Colors, Fonts, Text Properties)
 */
 
-/* Global body styles (Interitance Example) */
+/* Global body styles (Inheritance Example) */
 body {
     font-family: Helvetica, sans-serif; /* This is inherited by all text */
-    background-color: antiquewhite; /* matchting the HTML file */
+    background-color: antiquewhite; /* matching the HTML file */
 }
 
 /* External CSS for h1 (Overridden by in line CSS in index.html) */
 h1 {
-    color:palevioletred; /* Defult heading color */
+    color:palevioletred; /* Default heading color */
     text-align:center;
     font-size: 33px;
 }
