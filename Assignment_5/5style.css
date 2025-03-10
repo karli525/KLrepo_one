@@ -1,0 +1,90 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ===== Header & Navigation (Flexbox) ===== */
+.header {
+    background-color: #b3d9ff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;  /* Spreads links evenly across full width */
+    padding: 0 40px;  /* Optional: Adds space at the edges if needed */
+}
+
+
+.nav a {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+}
+
+.nav a.active {
+    background-color: #aaa;
+    color: #fff;
+}
+
+/* ===== Main Content (CSS Grid) ===== */
+.main-grid {
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 3px;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.main-content {
+    background-color: rgb(249, 249, 131);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #90ee90;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+}
