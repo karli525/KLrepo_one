@@ -20,9 +20,8 @@ a {
 .nav {
     display: flex;
     justify-content: space-between;  /* Spreads links evenly across full width */
-    padding: 0 40px;  /* Optional: Adds space at the edges if needed */
+    padding: 0 40px;
 }
-
 
 .nav a {
     background-color: transparent;
@@ -44,16 +43,18 @@ a {
 .main-grid {
     display: grid; 
     grid-template-columns: 2fr 1fr;
-    gap: 15px;
-    padding: 3px;
-    max-width: 1200px;
-    margin: 10px auto;
+    gap: 5px;
+    padding: 5px;
+    max-width: 100%;
+    margin: 5px auto;  /* Fixed semicolon issue */
+    box-sizing: border-box;
 }
 
 .main-content {
     background-color: rgb(249, 249, 131);
     padding: 20px;
     border-radius: 5px;
+    box-sizing: border-box;  /* Fixed width issue */
 }
 
 .sidebar {
@@ -72,7 +73,7 @@ a {
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-    .main-grid {
+    .main-grid 
         grid-template-columns: 1fr;
     }
 
@@ -86,5 +87,4 @@ a {
         text-align: center;
         border-bottom: 1px solid #ccc;
         padding: 10px;
-    }
-}
+    } /* Ensure this closing bracket is in place */
