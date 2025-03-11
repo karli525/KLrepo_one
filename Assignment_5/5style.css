@@ -73,9 +73,9 @@ a {
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-    .main-grid 
+    .main-grid {
         grid-template-columns: 1fr;
-    }
+    }}
 
     .nav {
         flex-direction: column;
@@ -87,4 +87,4 @@ a {
         text-align: center;
         border-bottom: 1px solid #ccc;
         padding: 10px;
-    } /* Ensure this closing bracket is in place */
+    }
