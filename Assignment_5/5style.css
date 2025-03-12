@@ -15,18 +15,25 @@ a {
     background-color: #b3d9ff;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;  /* Spreads links evenly across full width */
-    padding: 0 40px;
+    justify-content: space-between; /* Spread out links */
+    padding: 10px 40px; /* Adjust padding */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .nav a {
+    flex-grow: 1; /* Makes all links evenly fill space */
+    text-align: center;
+    padding: 10px;
     background-color: transparent;
-    padding: 0;
-    border-radius: 0px;
     transition: background-color 0.3s;
 }
 
@@ -46,7 +53,7 @@ a {
     gap: 5px;
     padding: 5px;
     max-width: 100%;
-    margin: 5px auto;  /* Fixed semicolon issue */
+    margin: 5px auto; 
     box-sizing: border-box;
 }
 
@@ -75,7 +82,7 @@ a {
 @media (max-width: 768px) {
     .main-grid {
         grid-template-columns: 1fr;
-    }}
+    }
 
     .nav {
         flex-direction: column;
@@ -88,3 +95,4 @@ a {
         border-bottom: 1px solid #ccc;
         padding: 10px;
     }
+}
