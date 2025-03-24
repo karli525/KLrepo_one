@@ -6,7 +6,7 @@ window.onload = function () {
     alert("Welcome to Assignment 6 with JavaScript!");
 };
 
-// 3. Function t toggle between light mode and dark mode
+// 3. Function to toggle between light mode and dark mode
 function changeTheme() {
     document.body.classList.toggle("dark-mode");
 }
