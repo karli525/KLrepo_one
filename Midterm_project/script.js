@@ -5,7 +5,7 @@ const colors = ["#fff9f7", "#fefff7", "#f7fff7"]; // grey, yellow, green
 const userName = prompt("What is your name?");
 const colorChoice = prompt("Pick a background color: 0 for grey, 1 for yellow, 2 for green");
 
-// 3. Sore Input in an Object
+// 3. Store Input in an Object
 const userInfo = {
   name: userName,
   selectedColor: colors[parseInt(colorChoice)]

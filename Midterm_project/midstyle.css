@@ -157,3 +157,36 @@ ul {
         padding: 10px;
     }
 }
+
+/* ===== Small Screens ===== */
+@media (max-width: 480px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .main-grid,
+    .middle-strip {
+      grid-template-columns: 1fr;
+    }
+
+    .nav a {
+      font-size: 16px;
+      padding: 8px;
+    }
+}
+
+/* ===== Large Screens ===== */
+@media (max-width: 1024px) {
+    .main-grid {
+      gap: 20px;
+    }
+
+    .strip-box {
+      padding: 15px;
+    }
+
+    .nav {
+      padding: 10px 20px;
+    }
+}
