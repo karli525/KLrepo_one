@@ -1,10 +1,9 @@
-// 1. Color Options Array (bright and fun!)
-const colors = ["#FFC0CB", "#FFD700", "#98FB98"]; 
-// pink, gold, pale green
+// 1. Color Options Array
+const colors = ["#fff9f7", "#fefff7", "#f7fff7"]; // grey, yellow, green
 
 // 2. Prompt for User Input
 const userName = prompt("What is your name?");
-const colorChoice = prompt("Hi " + userName + "! Pick a background color:\n0 = Pink\n1 = Gold\n2 = Mint Green");
+const colorChoice = prompt("Pick a background color: 0 for grey, 1 for yellow, 2 for green");
 
 // 3. Store Input in an Object
 const userInfo = {
@@ -12,10 +11,8 @@ const userInfo = {
   selectedColor: colors[parseInt(colorChoice)]
 };
 
-// 4. Array Check
+// 4. Array Check (Required Console Log)
 console.log("The first color in the array is:", colors[0]);
 
-// 5. Apply Color to Background after page loads
-window.onload = function () {
-  document.body.style.backgroundColor = userInfo.selectedColor;
-};
+// 5. Apply Color to Background
+document.body.style.backgroundColor = userInfo.selectedColor;
