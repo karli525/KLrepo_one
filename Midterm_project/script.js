@@ -18,3 +18,4 @@ console.log("The first color in the array is:", colors[0]);
 document.addEventListener("DOMContentLoaded", () => {
   document.body.style.backgroundColor = userInfo.selectedColor;
 });
+
