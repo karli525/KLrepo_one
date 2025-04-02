@@ -14,8 +14,7 @@ const userInfo = {
 // 4. Array Check
 console.log("The first color in the array is:", colors[0]);
 
-// 5. Apply Color to Background (after DOM is ready)
-document.addEventListener("DOMContentLoaded", () => {
+// 5. Apply Color to Background after page loads
+window.onload = function () {
   document.body.style.backgroundColor = userInfo.selectedColor;
-});
-
+};
