@@ -1,5 +1,8 @@
 // 1. Color Options Array
-const colors = ["#999999", "#ffff00", "#90ee90"]; // gray, bright yellow, light green
+const colors = ["#999999", "#ffff00", "#90ee90"]; // gray, yellow, green
+
+// ✅ Show all color values
+console.log("Color options available:", colors);
 
 // 2. Prompt for User Input
 const userName = prompt("What is your name?");
@@ -17,7 +20,5 @@ console.log("The first color in the array is:", colors[0]);
 // 5. Apply Color to Background after page loads
 window.onload = function () {
   document.body.style.backgroundColor = userInfo.selectedColor;
-
-  // Show which color was applied***
   console.log("Background color applied:", userInfo.selectedColor);
 };
