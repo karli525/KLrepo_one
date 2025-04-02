@@ -1,7 +1,8 @@
-// 1. Color Options Array
-const colors = ["#999999", "#ffff00", "#90ee90"]; // gray, yellow, green
+// 1. Color Options Array (bright and fun!)
+const colors = ["#FFC0CB", "#FFD700", "#98FB98"]; // pink, gold, pale green
 
-// ✅ Show all color values
+
+//  Show all color values
 console.log("Color options available:", colors);
 
 // 2. Prompt for User Input
