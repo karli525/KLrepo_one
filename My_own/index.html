@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="ownstyle.css">
+</head>
+
+<body class="page-index">
+
+<!-- Header with Navigation (Flexbox) -->
+<header class="header">
+    <nav class="nav">
+        <a href="index.html"class="active">Lifting 101</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="Supplements.html">Supplements</a>
+        <a href="CutVsBulk.html">Cut vs. Bulk</a>
+    </nav>
+</header>
+
+<!-- Main Content Area (CSS Grid) -->
+<div class="main-grid">
+  <section class="main-content">
+    <article>
+    <h1>Lifting 101</h1>
+      <p>I am sure you are wondering what goes into lifting. There is much more involved behind the scenes than just the final result, whether that be in a photo or how a competitor looks during their show. Lifting is not just about lifting weights. It is about mindset and determination. A great deal of discipline is required, especially when it comes to making dramatic changes in diet. Lifting involves a full lifestyle change, from sleep habits to eating routines. Every part of your daily life plays a role. This page will explain the basic foundations that are important for success in lifting</p>
+      <h2>Built Through Consistency</h2>
+      <img src="lifting_man.jpg" alt="Photo by Corey Young on Unsplash" class="spaced-image" class="float-left"  width="420">
+      <p>You might not see progress right away, and it can take longer than you expect. But every rep, every meal, and every rest day matters. Stay patient, stay consistent, and the results will come.</p>
+     </article>
+      </section>
+
+    <aside class="sidebar">
+        <h2>Healthy Meals</h2>
+        <ul>
+        <li> Protein-Packed Breakfast Bowl</li>
+      <li> Chicken and Rice Bowl/</li>
+      <li>Cottage Cheese & Fruit snack</li>
+      <li>Turkey Taco Wraps</li>
+      <li>Egg White Veggie Omelet</li>
+    <li>Greek Yogurt Parfait with Berries and Granola</li>
+    <img src="saladbowl.jpg" alt="Photo by Corey Young on Unsplash" class="spaced-image" class="float-left"  width="350">
+    <li>Grilled Chicken Caesar Salad</li>
+    <li>Tuna Avocado Rice Cakes</li>
+    <li>Overnight Protein Oats</li>
+    <li>Beef and Quinoa Power Bowl</li>
+    <li>Protein Pancakes with Banana</li>
+    <li>Turkey and Spinach Lettuce Wraps</li>
+    <li>Peanut Butter Protein Smoothie</li>
+    <li>Salmon and Sweet Potato Plate</li>
+    <li>Protein-Packed Pasta with Ground Turkey</li>
+    <li>High-Protein Chia Pudding</li>
+    <li>Egg and Turkey Breakfast Muffins</li>
+    <li>Protein Waffle Sandwich</li>
+    <li>Tofu Stir-Fry with Brown Rice</li>
+    </ul>
+</div>
+
+<div class="middle-strip">
+    <div class="strip-box">
+      <h3>Quick Tips</h3>
+      <ul>
+        <li>Stay hydrated throughout the day</li>
+        <li>Stick to a routine that works for you</li>
+        <li>Get enough quality sleep</li>
+        <li>Prepare your meals in advance</li>
+        <li>Do not skip warm-ups or cool-downs</li>
+        <li>Focus on form instead of just increasing weight</li>
+        <li>Track your progress through photos, body weight, or strength levels</li>
+        <li>Keep your gym bag packed and ready</li>
+        <li>Choose whole, nutrient-dense foods</li>
+        <li>Be consistent rather than aiming for perfection</li>
+        <li>Take your rest days seriously</li>
+        <li>Avoid comparing your progress to others</li>
+        <li>Plan your workouts based on your energy levels</li>
+        <li>Use supplements only when necessary</li>
+        <li>Listen to your body and adjust when needed</li> 
+      </ul>
+    </div>
+
+    <div class="strip-box">
+      <h3>Motivation</h3>
+      <p>There will be days when you do not feel motivated, and that is when discipline becomes the most important. Small changes made each day can lead to meaningful results over time. You do not need to be extreme to make progress. Staying consistent is what truly makes a difference. Focus on becoming a better version of yourself every day, and remember that strength comes from both your body and your mindset. Trust the process, even when progress feels slow. Every time you show up, you move closer to your goals. The perfect time to start may never come, so begin now. Build a strong body that supports the life you want, and believe that you are capable of achieving more than you think.</p>
+  </div>
+
+  <h2>Workout Generator</h2>
+<button onclick="generateWorkout('push')">Push Day</button>
+<button onclick="generateWorkout('pull')">Pull Day</button>
+<button onclick="generateWorkout('legs')">Leg Day</button>
+<p id="workoutDisplay"></p>
+
+ 
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; Karli Langer, April 2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

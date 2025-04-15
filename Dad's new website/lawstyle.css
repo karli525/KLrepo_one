@@ -1,0 +1,157 @@
+
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+  
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* ===== Header & Navigation (Flexbox) ===== */
+.header {
+    background-color: #e5f2ec;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Spread out links */
+    padding: 10px 40px; /* Adjust padding */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.nav a {
+    flex-grow: 1; /* Makes all links evenly fill space */
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #f1e8e8;
+}
+
+.nav a.active {
+    background-color: #aaa;
+    color: #fff;
+}
+
+/* ===== Main Content (CSS Grid) ===== */
+.main-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 5px;
+    max-width: 100%;
+    margin: 5px auto; 
+    box-sizing: border-box;
+}
+
+.main-content {
+    background-color: #fbf8f0;
+    padding: 20px;
+    border-radius:20px;
+    box-sizing: border-box;  
+}
+
+.sidebar {
+    background-color: #eff5eb;
+    padding: 20px;
+    border-radius: 20px;
+}
+/*---- Spaced images  ----- */
+.spaced-image 
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 15px;
+}
+
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #cce8d8;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 5px;
+}
+
+.footer {
+    grid-column: 1 / -1; /* Forces the footer to span all columns in a grid layout */
+    width: 100%;
+    background-color: #e5f2ec;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+}
+
+/* ===== Small Screens ===== */
+@media (max-width: 480px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .main-grid,
+    .middle-strip {
+      grid-template-columns: 1fr;
+    }
+
+    .nav a {
+      font-size: 16px;
+      padding: 8px;
+    }
+}
+
+/* ===== Large Screens ===== */
+@media (max-width: 1024px) {
+    .main-grid {
+      gap: 20px;
+    }
+
+    .strip-box {
+      padding: 15px;
+    }
+
+    .nav {
+      padding: 10px 20px;
+    }
+}
