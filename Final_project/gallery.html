@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | My Fitness Journey</title>
+  <link rel="stylesheet" href="midstyle.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJQBX0YY2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VJQBX0YY2D');
+  </script>
+</head>
+
+<body>
+  <div class="page-container">
+    <!-- Hero Banner -->
+    <header class="hero-banner" style="background-image: url('allprogress4.jpg'); background-size: cover; background-position: center;">
+      <div class="overlay-text">
+        <h1>Progress Gallery</h1>
+        <p>Moments I’m proud of — the ones that show how far I’ve come.</p>
+      </div>
+    </header>
+
+
+    
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+      <a href="routine.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
+      <a href="nutrition.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
+      <a href="reflections.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
+      <a href="gallery.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
+      <a href="affiliate.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+    </nav>
+
+    <!-- Gallery Content -->
+    <main class="main-grid">
+      <section class="gallery-grid fade-in">
+        <figure>
+          <img src="firstgym.jpg" alt="Early gym session" />
+          <figcaption>My first month of lifting. Scared, but committed.</figcaption>
+        </figure>
+        <figure>
+          <img src="cleanbowl.jpg" alt="Meal prep photo" />
+          <figcaption>Prepped meals and protein goals in action.</figcaption>
+        </figure>
+        <figure>
+          <img src="legday.jpg" alt="Workout selfie" />
+          <figcaption>Post-leg-day glow. Quads coming in.</figcaption>
+        </figure>
+        <figure>
+          <img src="runoutside.jpg" alt="Morning cardio view" />
+          <figcaption>Sunrise cardio — peace and power before the day starts.</figcaption>
+        </figure>
+        <figure>
+        <img src="russelsprouts.jpg" alt="Morning cardio view" />
+        <figcaption>Getting my greens in! These are my famous crispy brussel sprouts. </figcaption>
+      </figure>
+      <figure>
+      <img src="pasta.jpg" alt="Morning cardio view" />
+      <figcaption>Fueling with high-protein pasta after a lift.</figcaption>
+    </figure>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Karli Langer, May 2025</p>
+    </footer>
+  </div>
+  <button id="theme-toggle" class="toggle-button">Toggle Theme</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+
+</html>

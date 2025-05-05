@@ -4,76 +4,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nutrition</title>
+  <title>Nutrition | My Fitness Journey</title>
   <link rel="stylesheet" href="midstyle.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJQBX0YY2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VJQBX0YY2D');
+  </script>
 </head>
 
 <body>
   <div class="page-container">
+    <!-- Hero Banner -->
+    <header class="hero-banner" style="background-image: url('nutrition_banner.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay-text">
+          <h1>My Nutrition</h1>
+          <p>How I learned to fuel my body — one meal at a time.</p>
+        </div>
+      </header>
+      
 
-    <!-- Header with Navigation -->
-    <header class="header">
-      <nav class="nav">
-        <a href="index.html">Lifting 101</a>
-        <a href="nutrition.html" class="active">Nutrition</a>
-        <a href="Supplements.html">Supplements</a>
-        <a href="CutVsBulk.html">Cut vs. Bulk</a>
-        <a href="affiliate.html">Affiliate</a>
-      </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+      <a href="routine.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
+      <a href="nutrition.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
+      <a href="reflections.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
+      <a href="gallery.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
+      <a href="affiliate.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+    </nav>
 
     <!-- Main Content -->
     <main class="main-grid">
-      <div class="blog-entry">
-        <h1>Nutrition 101</h1>
-        <p>Nutrition is just as important as training when it comes to making real progress in lifting. The food you eat fuels your workouts, supports muscle recovery, and helps your body grow stronger over time. Without proper nutrition, it becomes much harder to gain muscle, lose fat, or improve performance in the gym. Lifting alone is not enough. Your body needs the right nutrients to repair and rebuild after every session.</p>
+      <article class="blog-entry fade-in">
+        <h2>🍩 Where I Began</h2>
+        <p>When I started lifting, I had no idea how important nutrition really was. I snacked without intention, mostly sugar, processed food, and barely any protein. I thought training alone would be enough. I was not correct. I used to eat burgers and meat most days without thinking about what my body actually needed. Within the last year I completely changed my diet. I focus a lot more on plant protein now and I feel so much better. For the past six months, I’ve been eating things like chickpeas, edamame, lentils, tofu, and protein pasta. My energy has changed, my digestion has improved, and I feel way more in control of how I fuel myself.</p>
+      </article>
 
-        <p>Diet is one of the most important things that will change when you begin lifting seriously. Many people quickly realize that what they eat has a direct impact on how they feel and perform. It becomes necessary to think about nutrition throughout the day, not just at mealtimes. Grocery lists begin to reflect these new goals, and meals are planned with more care. Nutrition becomes part of the lifestyle, not an afterthought.</p>
-
-        <p>Meal prep becomes a vital habit for those who want to stay consistent. Preparing meals in advance makes it easier to avoid skipping meals or grabbing convenience foods that do not align with your goals. It helps you stay in control of your portions and keeps you on track with your nutrition plan. One of the most important aspects of lifting nutrition is understanding macronutrients. These include protein, carbohydrates, and fats. The ideal ratio of these nutrients is different for everyone depending on their goals, body type, and level of physical activity. Someone trying to build muscle may eat more carbohydrates for energy, while someone focused on fat loss may reduce carbs and prioritize protein.</p>
-
+      <article class="blog-entry fade-in">
+        <h2>🥣 Learning to Meal Prep</h2>
+        <p>Eventually, I learned to prep. Chicken, rice, oats, and eggs became my go-to ingredients. I started tracking macros, using measuring cups, and cooking on Sundays. It became less of a chore and more of a commitment to myself.</p>
+      
         <figure class="float-left spaced-image">
-          <img src="saladInJar.jpg" alt="Photo by Ella Olsson on Unsplash" width="340" />
-          <figcaption class="image-credit">Photo by <a href="https://unsplash.com/@ellaolsson" target="_blank">Ella Olsson</a> on <a href="https://unsplash.com" target="_blank">Unsplash</a></figcaption>
+          <img src="chipotlebowl.jpg" width="500" alt="Meal prep photo">
+          <figcaption>Meal prep became a commitment to myself.</figcaption>
         </figure>
-
-        <p>Eating clean is a challenge, especially in the beginning. It often means reducing or eliminating processed and packaged foods. Clean eating focuses on whole, natural ingredients that provide real nutrition. This includes lean proteins, vegetables, fruits, whole grains, and healthy fats. Transitioning to clean eating requires commitment and discipline, but over time it becomes easier and more enjoyable. Your body will start to feel the difference, and it will reward you with better energy levels, clearer focus, and improved performance in the gym.</p>
-
-        <p>Proper nutrition serves as the foundation for lasting progress in lifting. Even with consistent effort in the gym, your body cannot grow or recover effectively without the right fuel. When smart eating habits are combined with regular training, meaningful results start to appear. This balance between what you eat and how you train is what drives true physical transformation.</p>
         <div class="clearfix"></div>
-      </div>
+      </article>
+      
+          
 
-      <aside class="sidebar">
-        <h2>Understanding Macros</h2>
-        <p>Understanding macronutrients is essential when it comes to nutrition and lifting. Macronutrients include protein, carbohydrates, and fats. These are the main sources of fuel for the body and are the foundation of every meal plan. Each one plays a specific and important role. Protein is necessary for muscle repair and growth. It helps rebuild muscle fibers after workouts and supports lean body mass, especially when lifting regularly. Carbohydrates provide the energy needed to power through training and daily activities. They help the body recover, keep energy levels steady, and support performance in the gym. Fats are just as important. They support hormone production, brain function, and help with the absorption of vitamins. A diet that includes healthy fats can improve overall wellness and support long-term progress.</p>
-
-        <figure class="float-left spaced-image">
-          <img src="goodFood.jpg" alt="Photo by Dan Gold on Unsplash" width="420" />
-          <figcaption class="image-credit">Photo by <a href="https://unsplash.com/@danielcgold" target="_blank">Dan Gold</a> on <a href="https://unsplash.com" target="_blank">Unsplash</a></figcaption>
-        </figure>
-
-        <p>The right balance of these macronutrients is different for each person. Someone who is trying to build muscle might need more carbohydrates and protein, while someone focusing on fat loss might lower their carbohydrate intake slightly and increase protein to protect muscle. The correct ratio depends on personal goals, body type, metabolism, and how often someone trains. Lifting requires intention, and that same intention should be applied to food choices. Tracking macros, reading labels, and planning meals becomes a part of the lifestyle. This does not mean eating the same things every day, but rather being aware of what is going into your body and how it supports your progress. Over time, understanding and adjusting your macronutrient intake becomes second nature. It is not about restriction, but about fueling your body in a way that matches your effort in the gym.</p>
+      <article class="blog-entry fade-in">
+        <h2>🥗 Where I Am Now</h2>
+        <p>Today, my meals are high-protein, clean, and consistent. I fuel with carbs before workouts and recover with whole foods after. I’ve learned to see food as fuel — not punishment or reward — and that mindset changed everything.</p>
         <div class="clearfix"></div>
-      </aside>
-
-      <!-- Additional Tips Section -->
-      <div class="strip-box">
-        <h3>Clean Eating and Whole Foods</h3>
-        <p>Clean eating focuses on consuming mostly whole, minimally processed foods. This includes lean proteins, fruits, vegetables, whole grains, and healthy fats. Reducing packaged or highly processed foods can help improve digestion, energy levels, and body composition.</p>
-      </div>
-
-      <div class="strip-box">
-        <h3>Meal Prep Tips</h3>
-        <p>Planning and preparing meals ahead of time helps you stay consistent. Try cooking in bulk, using reusable containers, and portioning out meals for the week. Having meals ready makes it easier to avoid unhealthy choices and stick to your nutrition plan.</p>
-      </div>
+      </article>
     </main>
 
+    
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; Karli Langer, April 2025</p>
+      <p>&copy; Karli Langer, May 2025</p>
     </footer>
-
   </div>
-</body>
+  <button id="theme-toggle" class="toggle-button">Toggle Theme</button>
 
+</body>
+<script src="script.js"></script>
 </html>

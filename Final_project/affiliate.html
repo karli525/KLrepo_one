@@ -2,49 +2,73 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Affiliate Links</title>
-  <link rel="stylesheet" href="midstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | My Fitness Journey</title>
+  <link rel="stylesheet" href="midstyle.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJQBX0YY2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VJQBX0YY2D');
+  </script>
 </head>
 
 <body>
   <div class="page-container">
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJQBX0YY2D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-VJQBX0YY2D');
-</script>
-
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav">
-        <a href="index.html">Lifting 101</a>
-        <a href="nutrition.html">Nutrition</a>
-        <a href="Supplements.html">Supplements</a>
-        <a href="CutVsBulk.html">Cut vs. Bulk</a>
-        <a href="affiliate.html" class="active">Affiliate</a>
-      </nav>
+    <!-- Hero Banner with Background Image -->
+    <header class="hero-banner full-hero">
+      <div class="hero-overlay">
+        <div class="overlay-text">
+        <h1>Affiliate Links</h1>
+        <p>Here at the links to all my classmates different websites.</p>
+      </div>
     </header>
 
-    <!-- Affiliate Links Section -->
+    <!-- Navigation with Analytics Tracking -->
+<nav class="nav">
+  <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+  <a href="routine.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
+  <a href="nutrition.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
+  <a href="reflections.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
+  <a href="gallery.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
+  <a href="affiliate.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+</nav>
+
+
     <main class="main-grid">
-      <div class="blog-entry">
-        <h1>Classmate Projects</h1>
+      <section class="blog-entry">
+        <h2>Classmate Projects</h2>
         <p>Click the links below to explore unique classmate websites. Each one highlights a different theme —. Your visit helps support their work through referral traffic!</p>
-      
-      </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; Karli Langer, April 2025</p>
-    </footer>
-  </div>
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function () {
+        gtag('event', 'nav_click', {
+          event_category: 'navigation',
+          event_label: this.textContent
+        });
+      });
+    });
+    <button id="theme-toggle" class="toggle-button">Toggle Theme</button>
+
+  </script>
 </body>
+</a>
+</section>
+</main>
 
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; Karli Langer, April 2025</p>
+</footer>
+</div>
+<script src="script.js"></script>
+<button id="theme-toggle" class="toggle-button">Toggle Theme</button>
+
+</body>
 </html>

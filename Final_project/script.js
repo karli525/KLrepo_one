@@ -1,19 +1,22 @@
-// 1. Color Options Array
-const colors = ["#ffe6ec", "#f5e1d2", "#fffdd0"]; // light pink, light brown, light yellow
+// Toggle between light and dark mode
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
 
-// 2. Prompt for User Input
-const userName = prompt("Welcome to Lifting 101! What's your name?");
-const colorChoice = prompt(`Hi ${userName || "guest"}! Choose a background color for the page:\n0 = Light Pink\n1 = Light Brown\n2 = Light Yellow`);
+  // Save preference
+  const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', currentTheme);
+}
 
-// 3. Store Input in an Object
-const userInfo = {
-  name: userName,
-  selectedColor: colors[parseInt(colorChoice)]
-};
+// Load saved preference
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
 
-// 4. Array Check (Required Console Log)
-console.log("The first color in the array is:", colors[0]);
-
-// 5. Apply Color to Entire Page
-document.body.style.backgroundColor = userInfo.selectedColor;
-document.documentElement.style.backgroundColor = userInfo.selectedColor;
+  // Attach event listener
+  const toggleButton = document.getElementById('theme-toggle');
+  if (toggleButton) {
+    toggleButton.addEventListener('click', toggleTheme);
+  }
+});

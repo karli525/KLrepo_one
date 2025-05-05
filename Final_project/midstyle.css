@@ -1,232 +1,313 @@
-/* Import Google Fonts */
+
+/* ===== Import Google Fonts ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap');
 
 /* ===== CSS Variables ===== */
 :root {
-  --primary-color: #84a98c;
-  --accent-color: #f0efeb;
-  --text-color: #333;
+  --primary-color: #f7f0f9;
+  --accent-color: #c6f0e5;
+  --highlight-color: #ffdde1;
+  --text-color: #333;x
+  --card-bg: #ffffff;
+}
+/* == Dark Mode for Java Scipt == */
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
 }
 
-/* ===== Global Styles ===== */
-html, body {
+body.dark-mode .nav,
+body.dark-mode .footer,
+body.dark-mode section,
+body.dark-mode article,
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+
+/* ===== Reset and Base Styles ===== */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html, body {
   height: 100%;
-  width: 100%;
-  font-size: 16px;
-  font-family: 'Lora', serif;
-  background-color: var(--accent-color);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
   color: var(--text-color);
+  line-height: 1.6;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .page-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 0 20px;
 }
 
-a {
+/* ===== Hero Banners (Consistent Height) ===== */
+.hero-banner,
+.gallery-banner,
+.reflections-banner,
+.routine-banner,
+.nutrition-banner {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-banner .overlay-text,
+.gallery-banner .overlay-text,
+.reflections-banner .overlay-text,
+.routine-banner .overlay-text,
+.nutrition-banner .overlay-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-banner {
+  background: linear-gradient(to right, var(--accent-color), var(--highlight-color));
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+
+/* ===== Navigation ===== */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 15px 0;
+  background-color: var(--accent-color);
+}
+
+.nav-link {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 600;
   color: var(--text-color);
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--highlight-color);
+  color: #000;
+}
+
+/* ===== Main Content Layout ===== */
+.main-grid {
+  max-width: 1000px;
+  margin: 40px auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  width: 100%;
+}
+
+section, article, aside {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  padding: 30px;
 }
 
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #fdf8f8;
-  margin: 0 auto;
-  max-width: 1000px;
-  box-sizing: border-box;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 1.25rem;
-  color: #555;
-}
-
-
-/* ===== Header & Navigation (Flexbox) ===== */
-.header {
-  background-color: #dcece3;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
-}
-
-.nav a {
-  padding: 12px 20px;
-  font-weight: 600;
-  border-radius: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.nav a:hover {
-  background-color: #ddd;
-}
-
-.nav a.active {
-  background-color: #aaa;
-  color: #fff;
-}
-
-/* ===== Blog Content Layout ===== */
-.main-grid {
-  display: block;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 20px;
-  box-sizing: border-box;
-}
-
-.blog-entry,
-.sidebar,
-.strip-box {
-  width: 100%;
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 ul {
   list-style: disc;
-  padding-left: 40px;
-  margin: 0;
-  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
-.spaced-image {
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   margin: 20px 0;
-  display: block;
-  border-radius: 15px;
 }
 
-.image-credit {
-    font-size: 0.75rem;
-    color: #666;
-    margin-top: 4px;
-  }
-  
-
-.float-left {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 15px;
+figure {
+  margin: 20px 0;
 }
 
-.clearfix::after {
-  content: "";
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ===== Gallery Grid ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.gallery-grid figure {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
   display: block;
-  clear: both;
+}
+
+.gallery-grid figcaption {
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== Routine Grid ===== */
+.routine-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.routine-day {
+  flex: 1 1 120px;
+  background: var(--highlight-color);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ===== Preview Cards (Homepage) ===== */
+.preview-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  text-align: center;
+  width: 260px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card::before {
+  content: attr(data-icon);
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ===== Toggle Button ===== */
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.toggle-button:hover {
+  background: var(--highlight-color);
 }
 
 /* ===== Footer ===== */
 .footer {
   margin-top: auto;
   width: 100%;
-  background-color: #dcece3;
+  background-color: var(--accent-color);
   text-align: center;
   padding: 20px 0;
-  box-sizing: border-box;
+  font-size: 0.9rem;
+  color: var(--text-color);
 }
 
-/* ===== Responsive Media Queries ===== */
-@media (max-width: 1024px) {
-  .main-grid {
-    max-width: 900px;
-    padding: 30px;
-  }
-
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
   .nav {
     flex-direction: column;
     align-items: center;
   }
 
-  .nav a {
-    width: 100%;
+  .nav-link {
+    width: 90%;
     text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 15.5px;
+    font-size: 1rem;
+    padding: 12px;
   }
 
-  .main-grid,
-  .sidebar,
-  .strip-box {
-    padding: 20px;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 15px;
-    padding: 10px;
+  .hero-banner,
+  .gallery-banner,
+  .reflections-banner,
+  .routine-banner,
+  .nutrition-banner {
+    height: 500px;
   }
 
-  .nav a {
-    font-size: 15px;
-    padding: 8px;
+  .preview-cards {
+    flex-direction: column;
+    align-items: center;
   }
 
-  ul {
-    padding-left: 25px;
-  }
-
-  .spaced-image {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (min-width: 1280px) {
-  .main-grid {
-    max-width: 1200px;
-    padding: 20px 40px;
+  .card {
+    width: 90%;
   }
 }

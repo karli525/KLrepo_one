@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Routine | My Fitness Journey</title>
+  <link rel="stylesheet" href="midstyle.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJQBX0YY2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VJQBX0YY2D');
+  </script>
+</head>
+   
+<body>
+    <div class="page-container">
+      <!-- Hero Banner -->
+      <header class="hero-banner" style="background-image: url('My_routinebanner.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay-text">
+          <h1>My Routine</h1>
+          <p>How I built strength, one rep at a time.</p>
+        </div>
+      </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+      <a href="routine.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
+      <a href="nutrition.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
+      <a href="reflections.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
+      <a href="gallery.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
+      <a href="affiliate.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-grid">
+      <section class="routine-section fade-in">
+        <h2>🏁 Getting Started</h2>
+        <p>When I first started lifting, I had no real idea what I was doing — just a desire to feel stronger, more confident, and more in control of my body. I was intimidated by the gym floor, so I stuck to the machines, repeating exercises I saw online or guessed would help. There was no split, no tracking, no form checks — just effort and trial and error. Full-body workouts became my default, even though I was often sore in the wrong places and saw little progress. Still, I kept showing up. I’d scroll through endless workout videos and routines, trying to find something that clicked. It took time, mistakes, and frustration before I began to build a rhythm that worked for me.</p>
+      </section>
+
+      <section class="routine-section fade-in">
+        <h2>📆 Push-Pull-Legs Split</h2>
+        <p>With time, I settled into a consistent weekly schedule. I trained five to six days a week, depending on how I felt — typically pushing on Mondays, pulling on Tuesdays, legs midweek, then repeating with different intensities. Thursdays or Sundays became flexible rest days. I learned the importance of listening to my body. Some weeks I had more energy and could push harder, while other times I scaled back to prevent burnout. I also started incorporating mobility work, active rest days, and more intentional warm-ups and cool-downs. My workouts weren’t just about lifting heavier anymore — they were about showing up for myself in a way that supported long-term growth.</p>
+      </section>
+
+      <section class="routine-section fade-in">
+        <h2>🏋️ Weekly Schedule</h2> 
+        <div class="routine-grid">
+          <div class="routine-day">Monday<br><span>Push</span></div>
+          <div class="routine-day">Tuesday<br><span>Pull</span></div>
+          <div class="routine-day">Wednesday<br><span>Legs</span></div>
+          <div class="routine-day">Thursday<br><span>Push</span></div>
+          <div class="routine-day">Friday<br><span>Run 2mi.</span></div>
+          <div class="routine-day">Saturday<br><span>Rest Day</span></div>
+        </div>
+      </section>
+
+      <section class="routine-section fade-in">
+        <h2>🧘‍♀️ Where I Am Now</h2>
+        <p>Right now I lift heavy about 4 to 5 times a week. I used to go 6 days straight but it started to feel like too much and I realized I wasn’t giving my body enough time to recover. I’ve learned that rest actually helps me get stronger. My workouts now feel more focused. I still do mostly strength training but I’ve started adding a little cardio here and there and I want to do more of it over time. My lifts are more intentional now and I’ve stopped feeling like I need to do everything all at once. I’m working on getting stronger but also building my endurance and just feeling good overall.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Karli Langer, May 2025</p>
+    </footer>
+  </div>
+  <button id="theme-toggle" class="toggle-button">Toggle Theme</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
