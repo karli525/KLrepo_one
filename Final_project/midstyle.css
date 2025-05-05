@@ -216,6 +216,53 @@ figcaption {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* == Meal Prep grid */
+.meal-prep-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+.meal-prep-grid img {
+  width: 100%;
+  max-width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.meal-prep-grid figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal-prep-grid figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.4;
+  max-width: 240px;
+}
+@media (max-width: 768px) {
+  .meal-prep-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .meal-prep-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
 /* ===== Preview Cards (Homepage) ===== */
 .preview-cards {
   display: flex;
