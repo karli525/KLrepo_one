@@ -7,7 +7,7 @@
   --primary-color: #f7f0f9;
   --accent-color: #c6f0e5;
   --highlight-color: #ffdde1;
-  --text-color: #333;x
+  --text-color: #333;
   --card-bg: #ffffff;
 }
 /* == Dark Mode for Java Scipt == */
@@ -196,6 +196,45 @@ figcaption {
   font-size: 0.9rem;
   color: #555;
 }
+/* ===== Uniform Card Grid Fix ===== */
+.uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.uniform-grid figure {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  height: 400px; /* Increased height for better fit */
+}
+
+.uniform-grid img {
+  width: 100%;
+  height: 240px;  /* Increased from 180px */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.uniform-grid figcaption {
+
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* limits to 3 lines */
+  -webkit-box-orient: vertical;
+}
 
 /* ===== Routine Grid ===== */
 .routine-grid {
@@ -259,8 +298,69 @@ figcaption {
     grid-template-columns: 1fr;
   }
 }
+/* Grid layout for Emotional Wins */
+.emotional-grid {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Style the image card */
+.emotional-image {
+  flex: 1 1 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+}
+
+.emotional-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption under the image */
+.wrap-caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Text column */
+.emotional-text {
+  flex: 2 1 400px;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .emotional-grid {
+    flex-direction: column;
+  }
+}
 
 
+
+.lessons-box {
+  flex: 1 1 280px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.lessons-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.lessons-box h3 {
+  margin-bottom: 12px;
+}
 
 
 /* ===== Preview Cards (Homepage) ===== */
@@ -332,6 +432,8 @@ figcaption {
   .nav {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    padding: 10px 0;
   }
 
   .nav-link {
@@ -340,6 +442,8 @@ figcaption {
     font-size: 1rem;
     padding: 12px;
   }
+}
+
 
   .hero-banner,
   .gallery-banner,
@@ -357,4 +461,3 @@ figcaption {
   .card {
     width: 90%;
   }
-}
