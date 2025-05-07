@@ -44,20 +44,30 @@
     <!-- Animated Cards -->
     <main class="main-grid">
       <section class="preview-cards">
-        <a href="routine.html" class="card" data-icon="🏋️">
+        <a href="routine.html" class="card" data-icon="🏋️" onclick="gtag('event', 'CTR', {
+          event_category: 'callToAction',
+          event_label: 'RoutineCard'
+        });">
           <h2>My Routine</h2>
           <p>My weekly workout plan and goals</p>
         </a>
-        <a href="nutrition.html" class="card" data-icon="🥗">
+        <a href="nutrition.html" class="card" data-icon="🥗" onclick="gtag('event', 'CTR', {
+          event_category: 'callToAction',
+          event_label: 'NutritionCard'
+        });">
           <h2>My Nutrition</h2>
           <p>How I fuel my body and stay on track</p>
         </a>
-        <a href="reflections.html" class="card" data-icon="🧐">
-          <h2>Reflections</h2>
+        <a href="gallery.html" class="card" data-icon="🪞" onclick="gtag('event', 'CTR', {
+          event_category: 'callToAction',
+          event_label: 'GalleryCard'
+        });">
+          <h2>📸 Gallery</h2>
           <p>My thoughts, challenges, and mindset shifts</p>
         </a>
       </section>
     </main>
+    
 
     <!-- Footer -->
     <footer class="footer">

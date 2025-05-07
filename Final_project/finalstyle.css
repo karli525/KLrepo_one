@@ -376,6 +376,43 @@ figcaption {
   border-radius: 10px;
 }
 
+/* ===== CTA Section ===== */
+.cta-section {
+  background-color: var(--highlight-color);
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cta-section button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-section button:hover {
+  background-color: #b1e6d7;
+}
+
+
 /* Caption under the image */
 .wrap-caption {
   font-size: 0.9rem;
@@ -394,7 +431,6 @@ figcaption {
     flex-direction: column;
   }
 }
-/* Minor update to trigger Git commit */
 
 
 .lessons-box {
