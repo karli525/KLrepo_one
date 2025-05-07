@@ -120,6 +120,57 @@ body {
   color: #000;
 }
 
+.social-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 240px; /* Increased width */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.social-card:hover {
+  transform: scale(1.05);
+}
+
+.social-card img {
+  width: 200px;       /* Bigger image */
+  height: 200px;      /* Square */
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.social-card p {
+  font-weight: 700;
+  font-size: 1.15rem; /* Larger text */
+  margin: 0;
+  color: #222;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+}
+
+.social-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.contact-intro h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+
 /* ===== Main Content Layout ===== */
 .main-grid {
   max-width: 1000px;
@@ -187,9 +238,11 @@ figcaption {
 
 .gallery-grid img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 360px; /* or another fixed value that fits your layout */
+  object-fit: cover;
+  border-radius: 10px;
 }
+
 
 .gallery-grid figcaption {
   padding: 15px;

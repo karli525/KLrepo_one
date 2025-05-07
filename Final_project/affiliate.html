@@ -29,22 +29,31 @@
       </div>
     </header>
 
-    <!-- Navigation with Analytics Tracking -->
-<nav class="nav">
-  <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
-  <a href="routine.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
-  <a href="nutrition.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
-  <a href="reflections.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
-  <a href="gallery.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
-  <a href="affiliate.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
-</nav>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+      <a href="routine.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
+      <a href="nutrition.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
+      <a href="gallery.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
+      <a href="contact.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
+      <a href="affiliate.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+    </nav>
+    <p id="welcome-message"></p>
 
 
     <main class="main-grid">
       <section class="blog-entry">
         <h2>Classmate Projects</h2>
-        <p>Click the links below to explore unique classmate websites. Each one highlights a different theme —. Your visit helps support their work through referral traffic!</p>
-
+        <p>Click the links below to explore unique classmate websites. Each one highlights a different theme. Your visit helps support their work through referral traffic!</p>
+        <ul>
+          <li><a href="https://cmccarthy3.github.io/IT-030/Final/index.html" target="_blank" rel="noopener">Visit Colin's Wildlife Site!</a></li>
+          <li><a href="https://skylarbrrown05.github.io/it030/final/index.html" target="_blank" rel="noopener">Check Out Skylar's Fashion Site!</a></li>
+          <li><a href="https://abiparilla.github.io/it030/final/index.htmlt" target="_blank" rel="noopener">Explore Abigal's Skin Site!</a></li>
+        </ul>
+      </section>
+    </main>
+    
   <script>
     document.querySelectorAll('nav a').forEach(link => {
       link.addEventListener('click', function () {

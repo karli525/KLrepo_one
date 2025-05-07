@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflections | My Fitness Journey</title>
+  <link rel="stylesheet" href="finalstyle.css" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJQBX0YY2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VJQBX0YY2D');
+  </script>
+</head>
+<body>
+  <div class="page-container">
+    <!-- Hero Banner -->
+    <header class="hero-banner" style="background-image: url('bannerreflec1.jpeg'); background-size: cover; background-position: center;">
+      <div class="overlay-text">
+        <h1>Contact Me</h1>
+        <p>Get to know what I am about</p>
+      </div>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+      <a href="routine.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Routine'})">Routine</a>
+      <a href="nutrition.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Nutrition'})">Nutrition</a>
+      <a href="gallery.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Reflections'})">Reflections</a>
+      <a href="contact.html" class="nav-link active" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: '>Contact'})">Contact</a>
+      <a href="affiliate.html" class="nav-link" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+    </nav>
+    <p id="welcome-message"></p>
+
+
+    <!-- Main Content -->
+    <main class="main-grid fade-in">
+      <section class="contact-intro">
+        <h2>Let's Connect!</h2>
+        <p>If you've followed my journey and want to reach out, collaborate, or just say hi — here's how to find me!</p>
+      </section>
+    
+      <section class="contact-links">
+        <!-- Instagram Card -->
+        <div class="social-card">
+          <a href="https://www.instagram.com/karli_lifts?igsh=djJ5bnplbzhweThw&utm_source=qr" target="_blank">
+            <img src="@Karli_lifts.jpg" alt="Karli's Instagram" />
+            <p>@karli_lifts</p>
+          </a>
+        </div>
+      
+        <!-- YouTube Card -->
+        <div class="social-card">
+          <a href="https://www.youtube.com/@KarliTaylor" target="_blank">
+            <img src="@KarliTaylor.jpg" alt="Karli's YouTube" />
+            <p>@Karli Taylor</p>
+          </a>
+        </div>
+      
+        <!-- Email Card -->
+        <div class="social-card">
+          <a href="mailto:karli_langer@gmail.com">
+            <img src="gmail.Icon.jpg" alt="Email Icon" />
+            <p>Email Me</p>
+          </a>
+        </div>
+      </section>
+      
+      
+    
+      <section class="contact-gallery">
+        <h3>Some Moments From My Journey</h3>
+        <div class="gallery-grid">
+          <img src="Screenshot 2025-05-06 at 9.25.11 PM.png" alt="Progress photo 1" />
+          <img src="Screenshot 2025-05-06 at 9.25.16 PM.png" alt="Progress photo 2" />
+          <img src="latspread.png" alt="Progress photo 3" />
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Karli Langer, May 2025</p>
+    </footer>
+  </div> 
+  
+</body>
+
+<script src="script.js"></script>
+<button id="theme-toggle" class="toggle-button">Toggle Theme</button>
+
+</body>
+</html>
+
+
+</html>
