@@ -94,6 +94,23 @@ body {
 }
 
 
+
+.banner-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.banner-credit a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* ===== Navigation ===== */
 .nav {
   display: flex;
