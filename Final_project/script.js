@@ -46,3 +46,18 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleButton.addEventListener('click', toggleTheme);
   }
 });
+
+// Other JS code...
+
+const urlParams = new URLSearchParams(window.location.search);
+const source = urlParams.get('utm_source');
+const medium = urlParams.get('utm_medium');
+const campaign = urlParams.get('utm_campaign');
+
+if (source && medium && campaign) {
+  gtag('event', 'manual_referral', {
+    event_category: 'referral_test',
+    event_label: source + ' / ' + medium,
+    campaign: campaign
+  });
+}
