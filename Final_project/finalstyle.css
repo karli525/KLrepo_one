@@ -306,6 +306,35 @@ figcaption {
   -webkit-box-orient: vertical;
 }
 
+/*  Affiliate Buttons function */
+.affiliate-buttons {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.affiliate-btn {
+  display: inline-block;
+  margin: 15px 10px;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.affiliate-btn:hover {
+  background-color: var(--highlight-color);
+  transform: scale(1.05);
+  color: #000;
+}
+
+
+
+
 /* ===== Routine Grid ===== */
 .routine-grid {
   display: flex;
