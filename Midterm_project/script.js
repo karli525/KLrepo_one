@@ -16,3 +16,18 @@ console.log("The first color in the array is:", colors[0]);
 
 // 5. Apply Color to Background
 document.body.style.backgroundColor = userInfo.selectedColor;
+
+const urlParams = new URLSearchParams(window.location.search);
+const source = urlParams.get('utm_source');
+const medium = urlParams.get('utm_medium');
+const campaign = urlParams.get('utm_campaign');
+
+if (source && medium && campaign) {
+  console.log("Sending manual_referral event to GA4...");
+  gtag('event', 'manual_referral', {
+    event_category: 'referral_test',
+    event_label: source + ' / ' + medium,
+    campaign: campaign
+  });
+}
+
