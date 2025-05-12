@@ -10,7 +10,7 @@
   --text-color: #333;
   --card-bg: #ffffff;
 }
-/* == Dark Mode for Java Scipt == */
+/* ===== Dark Mode for Java Scipt ===== */
 body.dark-mode {
   background-color: #1f1f1f;
   color: #f0f0f0;
