@@ -506,6 +506,23 @@ figcaption {
 .toggle-button:hover {
   background: var(--highlight-color);
 }
+.email-credit {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.65rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 10;
+  pointer-events: auto;
+  opacity: 1; /* <-- This ensures it always displays */
+  visibility: visible; /* <-- Just in case hover styles exist elsewhere */
+  transition: none; /* Prevents any fade-in */
+}
+
 
 /* ===== Footer ===== */
 .footer {
