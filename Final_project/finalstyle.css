@@ -184,8 +184,74 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+
 }
 
+/* Fix layout for Contact page image gallery */
+.contact-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Each card wraps an image */
+.contact-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* default to 1 column */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Make it 2 columns on tablets and up */
+@media (min-width: 600px) {
+  .contact-gallery .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Card styling */
+.contact-gallery .gallery-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden; /* ensures image corners are rounded */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Image styling */
+.contact-gallery .gallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 480px;
+}
+
+/* Gallery Mobile section */
+
+@media (max-width: 480px) {
+  .contact-gallery .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    width: 100%;                    /* ✅ prevents overflow */
+    box-sizing: border-box;         /* ✅ respects padding */
+  }
+
+  .contact-gallery .gallery-card img {
+    max-height: none;
+    height: auto;
+    width: 100%;                    /* ✅ image fills card but no overflow */
+    object-fit: contain;
+  }
+
+  .contact-gallery .gallery-card {
+    margin-bottom: 16px;
+  }
+}
 
 
 /* ===== Main Content Layout ===== */
@@ -506,23 +572,6 @@ figcaption {
 .toggle-button:hover {
   background: var(--highlight-color);
 }
-.email-credit {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 0.65rem;
-  padding: 4px 6px;
-  border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
-  z-index: 10;
-  pointer-events: auto;
-  opacity: 1; /* <-- This ensures it always displays */
-  visibility: visible; /* <-- Just in case hover styles exist elsewhere */
-  transition: none; /* Prevents any fade-in */
-}
-
 
 /* ===== Footer ===== */
 .footer {
